@@ -27,3 +27,8 @@ Here is my AI exam about training AI how to play Flappy Bird with Deep Q-Network
 
 ### Test
 - **Test model** by running **python test.py**
+
+### Members
+- Phạm Minh Quân
+- Phạm Quý Trưởng
+- Nguyễn Bảo Việt
