@@ -16,17 +16,17 @@ class FlappyBird(object):
 
     screen = display.set_mode((screen_width, screen_height))
     display.set_caption('Deep Q-Learning Network Flappy Bird')
-    base_image = load('../assets/sprites/base.png').convert_alpha()
-    background_image = load('../assets/sprites/background-black.png').convert()
+    base_image = load('assets/sprites/base.png').convert_alpha()
+    background_image = load('assets/sprites/background-black.png').convert()
 
     pipe_images = [
-        rotate(load('../assets/sprites/pipe-green.png').convert_alpha(), 180),
-        load('../assets/sprites/pipe-green.png').convert_alpha(),
+        rotate(load('assets/sprites/pipe-green.png').convert_alpha(), 180),
+        load('assets/sprites/pipe-green.png').convert_alpha(),
     ]
     bird_images = [
-        load('../assets/sprites/redbird-upflap.png').convert_alpha(),
-        load('../assets/sprites/redbird-midflap.png').convert_alpha(),
-        load('../assets/sprites/redbird-downflap.png').convert_alpha(),
+        load('assets/sprites/redbird-upflap.png').convert_alpha(),
+        load('assets/sprites/redbird-midflap.png').convert_alpha(),
+        load('assets/sprites/redbird-downflap.png').convert_alpha(),
     ]
 
     bird_hitmask = [pixels_alpha(image).astype(bool) for image in bird_images]
@@ -172,16 +172,16 @@ class FlappyBird(object):
         return image, reward, terminal
 
 
-if __name__ == '__main__':
-    game = FlappyBird()
-    while True:
-        action = 0
-        for event in pygame.event.get():
-            if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
-                action = 1
-        image, reward, terminal = game.next_frame(action)
-        if terminal:
-            print("Game Over! Score: {}".format(game.score))
-
-
-
+# if __name__ == '__main__':
+#     game = FlappyBird()
+#     while True:
+#         action = 0
+#         for event in pygame.event.get():
+#             if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
+#                 action = 1
+#         image, reward, terminal = game.next_frame(action)
+#         if terminal:
+#             print("Game Over! Score: {}".format(game.score))
+#
+#
+#

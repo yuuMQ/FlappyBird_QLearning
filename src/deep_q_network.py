@@ -31,7 +31,6 @@ class DeepQNetwork(nn.Module):
         output = self.conv1(input)
         output = self.conv2(output)
         output = self.conv3(output)
-
         output = output.view(output.size(0), -1)
         output = self.fc1(output)
         output = self.fc2(output)
