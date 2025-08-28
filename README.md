@@ -28,7 +28,15 @@ Here is my AI exam about training AI how to play Flappy Bird with Deep Q-Network
 ### Test
 - **Test model** by running **python test.py**
 
-### Members
+---
+
+## REFERENCES
+- This project based on VietNguyen AI Flappy Bird project
+- Link repo: **https://github.com/vietnh1009/Flappy-bird-deep-Q-learning-pytorch/**
+
+---
+
+## Members
 - Phạm Minh Quân
 - Phạm Quý Trưởng
 - Nguyễn Bảo Việt
