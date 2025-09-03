@@ -63,8 +63,8 @@ class FlappyBird(object):
         self.base_shift = self.base_image.get_width()  - self.background_image.get_width()
 
         pipes = [self.generated_pipe(), self.generated_pipe()]
-        pipes[0]["x_upper"] = pipes[0]["x_lower"] = self.screen_width # Ong tren
-        pipes[1]["x_upper"] = pipes[1]["x_lower"] = self.screen_width * 1.5 # Ong duoi
+        pipes[0]["x_upper"] = pipes[0]["x_lower"] = self.screen_width
+        pipes[1]["x_upper"] = pipes[1]["x_lower"] = self.screen_width * 1.5
         self.pipes = pipes
 
         self.current_velocity_y = 0
